@@ -17,20 +17,19 @@ import random
 import wandb
 from wandb.keras import WandbCallback
 
-# Set hyperparameters, which can be overwritten with a W&B Sweep
-hyperparameter_defaults = dict(
-  dropout = 0.2,
-  hidden_layer_size = 128,
-  layer_1_size = 16,
-  layer_2_size = 32,
-  learn_rate = 0.01,
-  decay = 1e-6,
-  momentum = 0.9,
-  epochs = 8,
+# Initialize wandb and save hyperparameters
+wandb.init(
+  project="sample-project",
+  config={
+    dropout = 0.2,
+    hidden_layer_size = 128,
+    layer_1_size = 16,
+    layer_2_size = 32,
+    learn_rate = 0.01,
+    decay = 1e-6,
+    momentum = 0.9,
+    epochs = 8 }
 )
-
-# Initialize wandb
-wandb.init(config=hyperparameter_defaults)
 config = wandb.config
 
 (X_train_orig, y_train_orig), (X_test, y_test) = fashion_mnist.load_data()
