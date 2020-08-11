@@ -21,14 +21,14 @@ from wandb.keras import WandbCallback
 wandb.init(
   project="sample-project",
   config={
-    dropout = 0.2,
-    hidden_layer_size = 128,
-    layer_1_size = 16,
-    layer_2_size = 32,
-    learn_rate = 0.01,
-    decay = 1e-6,
-    momentum = 0.9,
-    epochs = 8 }
+    "dropout": 0.2,
+    "hidden_layer_size": 128,
+    "layer_1_size": 16,
+    "layer_2_size": 32,
+    "learn_rate": 0.01,
+    "decay": 1e-6,
+    "momentum": 0.9,
+    "epochs": 8 }
 )
 config = wandb.config
 
