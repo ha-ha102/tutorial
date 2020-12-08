@@ -1,0 +1,18 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.6.8",
+    "heartbeatAt": "2020-12-08T06:34:03.110773",
+    "startedAt": "2020-12-08T06:34:00.895657",
+    "docker": null,
+    "gpu": "GeForce GTX 1050 Ti",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "codePath": "tutorial.py",
+    "program": "tutorial.py",
+    "host": "DESKTOP-HMLGFAR",
+    "username": "Hari",
+    "executable": "C:\\Program Files\\Python36\\python.exe"
+}
